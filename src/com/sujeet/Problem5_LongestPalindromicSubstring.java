@@ -1,6 +1,6 @@
 package com.sujeet;
 
-public class LongestPalindromicSubstring_5 {
+public class Problem5_LongestPalindromicSubstring {
     public String longestPalindrome(String s) {
         String res = "";
         if (s == null || s.length() == 0) {
