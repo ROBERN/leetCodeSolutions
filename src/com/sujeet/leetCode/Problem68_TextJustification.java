@@ -46,7 +46,10 @@ public class Problem68_TextJustification {
         if (right == words.length - 1) {
             return getLastString(words, left, right, maxWidth);
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 446f9d0f5a3da39573e110796fc9ef6aa77ed852
         for (int i = left; i <= right; i++) {
             sb.append(words[i]);
             int space = evenSpace + (extraSpace > 0 ? 1 : 0);
@@ -81,6 +84,7 @@ public class Problem68_TextJustification {
         }
         return sb.toString();
     }
+<<<<<<< HEAD
 
     private static String sanitize(String S) {
         StringBuilder sb = new StringBuilder();
@@ -97,4 +101,6 @@ public class Problem68_TextJustification {
     public static void main(String[] args) {
         Problem68_TextJustification.sanitize("ab#c");
     }
+=======
+>>>>>>> 446f9d0f5a3da39573e110796fc9ef6aa77ed852
 }
