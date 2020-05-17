@@ -1,4 +1,4 @@
-package com.sujeet.leetCode;
+package com.sujeet.Practise;
 
 class WordDictionary {
 

@@ -6,10 +6,7 @@ public class Problem767_ReorganizeString {
     private static class Key {
         char c;
         int count;
-<<<<<<< HEAD
         Random random = new Random();
-=======
->>>>>>> 446f9d0f5a3da39573e110796fc9ef6aa77ed852
         Key(char ch, int countVal) {
             c = ch;
             count = countVal;
@@ -17,20 +14,13 @@ public class Problem767_ReorganizeString {
     }
 
     public static String reorganizeString(String S) {
-<<<<<<< HEAD
-=======
         TreeMap<Character, Integer> map = new TreeMap<>();
-
->>>>>>> 446f9d0f5a3da39573e110796fc9ef6aa77ed852
         int[] counts = new int[26];
         for(int i = 0; i < S.length(); i++) {
             counts[S.charAt(i) -'a']++;
         }
-<<<<<<< HEAD
         String string = " hello  man";
         string.split(" ");
-=======
->>>>>>> 446f9d0f5a3da39573e110796fc9ef6aa77ed852
         List<Key> keys = new ArrayList<>();
         for(int i = 0; i < 26; i++) {
             if(counts[i] > 0) {
