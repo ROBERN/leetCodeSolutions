@@ -104,6 +104,7 @@ public class Problem212_WordSearch {
             trie.insertWord(word);
         }
         this.board = board;
+        List<String> ma = getMatches();
         return getMatches();
     }
 
