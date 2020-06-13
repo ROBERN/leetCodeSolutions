@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Problem556_NextGreater {
     public int nextGreaterElement(int n) {
-        String str = Integer.toString(n);
+        String str = Integer.toString(n, 9);
 
         for(int i = 0; i < str.length(); i++) {
             if(i == str.length() - 1)

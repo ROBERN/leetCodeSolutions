@@ -121,6 +121,7 @@ public class Problem212_WordSearch {
 
     private Set<String> search(TrieNode curr, int r, int c, Set<Pair<Integer, Integer>> visited, String str) {
         Set<String> results = new HashSet<>();
+
         if(curr.isEnd()) {
             results.add(str);
         }
