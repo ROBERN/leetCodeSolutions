@@ -1,0 +1,53 @@
+{
+  "user2354": {
+    "user3421": {
+      "archive": {
+        "conversation123": {
+          "message1" : {
+            "id": "msg973",
+            "author": "user2354",
+            "recipients": "user3421",
+            "text": "What is your favorite programming language?"
+          },
+          "message2" : {
+            "id": "msg407",
+            "author": "user3421",
+            "recipients": "user2354",
+            "text": "I love C++ for its speed and flexibility but I prefer Java for its simplicity"
+          }
+        }
+      },
+      "inbox": {
+        "conversation456": {
+          "message1" : {
+            "id": "msg739",
+            "author": "user3421",
+            "recipients": "user2354",
+            "text": "What language would you prefer to use for an offline query?"
+          },
+          "message2" : {
+            "id": "msg345",
+            "author": "user2354",
+            "recipients": "user3421",
+            "text": "What language would you prefer to use for an offline query?"
+          }
+        }
+      }
+    },
+    "user3245": {
+      "spam": {
+        "flagged": {
+          "conversation987": {
+            "message1" : {
+              "id": "msg212",
+              "author": "user3245",
+              "recipients": "user3245",
+              "text": "I found your profile accidentally and would like to connect with you."
+            },
+            "user3245": ""
+          }
+        }
+      }
+    }
+  }
+}

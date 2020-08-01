@@ -1,6 +1,6 @@
 package com.sujeet.Practise;
 
-public class BalancedParans {
+public class BalancedParanthesis {
     /*
      * Complete the 'doit' function below.
      *
