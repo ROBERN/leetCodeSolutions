@@ -3,7 +3,6 @@ package com.sujeet.leetCode;
 import java.util.*;
 
 public class Problem68_TextJustification {
-    SortedMap<Integer, Integer> map = new TreeMap<>();
 
     public List<String> fullJustify(String[] words, int maxWidth) {
         List<String> res = new ArrayList<>();
