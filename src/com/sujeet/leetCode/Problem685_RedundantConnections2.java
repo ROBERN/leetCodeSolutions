@@ -13,15 +13,14 @@ public class Problem685_RedundantConnections2 {
     private Map<Integer, List<Integer>> graph;
     private boolean[] visited;
     private int[] parent;
-    private int N;
     private int cycleNode = -1;
-    int[] result;
-    List<List<Integer>> candidates;
+    private int[] result;
+    private List<List<Integer>> candidates;
     public int[] findRedundantDirectedConnection(int[][] edges) {
-        N = edges.length;
+        int n = edges.length;
         graph = new HashMap<>();
-        visited = new boolean[N+1];
-        parent = new int[N+1];
+        visited = new boolean[n +1];
+        parent = new int[n +1];
         result = new int[2];
         candidates = new ArrayList<>();
 
@@ -35,9 +34,9 @@ public class Problem685_RedundantConnections2 {
             candidates = getCyclePairs();
 
         for(int[] edge : edges) {
-            for(int idx = 0; idx < candidates.size(); idx++) {
-                if ((edge[0] == candidates.get(idx).get(0) && edge[1] == candidates.get(idx).get(1)) ||
-                        edge[0] == candidates.get(idx).get(1) && edge[1] == candidates.get(idx).get(0)) {
+            for (List<Integer> candidate : candidates) {
+                if ((edge[0] == candidate.get(0) && edge[1] == candidate.get(1)) ||
+                        edge[0] == candidate.get(1) && edge[1] == candidate.get(0)) {
                     result[0] = edge[0];
                     result[1] = edge[1];
                 }
@@ -88,11 +87,9 @@ public class Problem685_RedundantConnections2 {
     }
 
     private void createGraph(int[][] edges) {
-
         for(int[] edge : edges) {
             graph.computeIfAbsent(edge[0], empty -> new ArrayList<>()).add(edge[1]);
         }
-
     }
 
     public static void main(String[] args) {

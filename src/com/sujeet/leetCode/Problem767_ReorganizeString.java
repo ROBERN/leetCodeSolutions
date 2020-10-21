@@ -14,7 +14,6 @@ public class Problem767_ReorganizeString {
     }
 
     public static String reorganizeString(String S) {
-        TreeMap<Character, Integer> map = new TreeMap<>();
         int[] counts = new int[26];
         for(int i = 0; i < S.length(); i++) {
             counts[S.charAt(i) -'a']++;

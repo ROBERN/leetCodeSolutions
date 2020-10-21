@@ -3,10 +3,11 @@ package com.sujeet.leetCode;
 import java.util.*;
 
 public class Problem269_AlienDict {
-    Map<Character, Set<Character>> graph = new HashMap<>();
-    Set<Character> charSet = new HashSet<>();
-    Set<Character> sortedChars = new HashSet<>();
-    boolean illegal = false;
+    private Map<Character, Set<Character>> graph = new HashMap<>();
+    private Set<Character> charSet = new HashSet<>();
+    private Set<Character> sortedChars = new HashSet<>();
+    private boolean illegal = false;
+
     public String alienOrder(String[] words) {
         createGraph(words, 0, words.length-1, 0);
         // topologicalSort
@@ -66,7 +67,7 @@ public class Problem269_AlienDict {
             charSet.add(currChar);
             if (!seenChars.contains(currChar)) {
                 for (char seen : seenChars) {
-                    graph.computeIfAbsent(seen, set -> new HashSet<Character>()).add(currChar);
+                    graph.computeIfAbsent(seen, set -> new HashSet<>()).add(currChar);
                 }
             }
             if (words[prevSeenIdx].charAt(idx) != currChar)
