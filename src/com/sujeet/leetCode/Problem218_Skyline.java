@@ -34,7 +34,7 @@ public class Problem218_Skyline {
         }
     }
 
-    public List<List<Integer>> getSkyline(int[][] buildings) {
+    private static List<List<Integer>> getSkyline(int[][] buildings) {
         int len = buildings.length;
         BuildingPoint[] points = new BuildingPoint[len*2];
 
@@ -81,8 +81,7 @@ public class Problem218_Skyline {
     }
 
     public static void main(String[] args) {
-        Problem218_Skyline obj = new Problem218_Skyline();
-        System.out.println(obj.getSkyline(new int[][]{
+        System.out.println(Problem218_Skyline.getSkyline(new int[][]{
                 {3,7,8},{3,8,7},{3,9,6},{3,10,5},{3,11,4},{3,12,3},{3,13,2},{3,14,1}
         }));
     }
